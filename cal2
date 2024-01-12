@@ -1,0 +1,54 @@
+#!/bin/bash
+echo "please enter first number $x"
+read x
+echo "please enter first number $y"
+read y
+echo "Please enter your choice
+1.Addition
+2.subtraction
+3.multiplication
+4.division"
+
+read  z
+ if [[ $z == 1 ]]
+ then
+         sum=$(( $x + $y ))
+     echo sum=$sum
+elif
+     [[ $z == 2 ]]
+ then
+      
+   	if  [[  $x -gt $y ]]
+
+           sub=$(( $x - $y ))
+   elif
+                 sub=$(( $y - $x ))
+
+         echo sub=$sub
+	fi
+elif
+
+ [[ $z == 3 ]]
+ then
+         mul=$(( $x * $y ))
+     echo mul=$mul
+
+
+   elif
+           [[ $z == 4 ]]
+ then
+      
+        if  [[  $x -gt $y ]]
+
+	then  div=$(( $x / $y ))
+	else
+                 div=$(( $y / $x ))
+        
+         echo div=$div
+	fi
+elif
+	echo "chosen option is inavlid"
+
+
+ fi
+

@@ -1,0 +1,36 @@
+#!/bin/bash
+echo "please enter first number $x"
+read x
+echo "please enter first number $y"
+read y
+echo "Please enter your choice
+1.Addition
+2.subtraction
+3.multiplication
+4.division"
+read  z
+ if [[ $z == 1 ]]
+ then	 
+	 sum=$(( $x + $y )) 
+     echo sum=$sum
+elif
+     [[ $z == 2 ]]
+ then
+         sub=$(( $x - $y ))
+    
+	 echo sub=$sub
+elif
+
+ [[ $z == 3 ]]
+ then
+         mul=$(( $x * $y ))
+     echo mul=$mul
+
+
+   elif
+	   [[ $z == 4 ]]
+ then
+         div=$(( $x / $y ))
+     echo div=$div
+
+ fi

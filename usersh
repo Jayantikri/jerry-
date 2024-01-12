@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "please enter user name $x"
+read x
+for(( u=1050; u <= 1060; u++))
+do
+ 
+
+
+	#echo "sudo adduser -u 1050 -s /bin/sh -p q123"
+       	
+
+	sudo useradd -u  -s /bin/bash -p q123  $x
+
+echo "user id is:
+"
+cat /etc/passwd | grep $x
+
+echo "new $x user added" 
