@@ -1,7 +1,8 @@
 # jerry-
 scripts
 cat > gitclone
-...first go in directory which is to push in git
+```
+first go in directory which is to push in git
 .......>if git is not installed (sudo apt install git)
 ........>git clone <link>  (link from github site code section https link)
 ....>
