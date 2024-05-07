@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "please enter username and password"
+read username
+read password
+echo $username
+echo $password
+sudo useradd -rm -d /home/root -s /bin/bash  -p $password  $username && echo "user is ready"
+echo "$username:$password" | chpasswd
+
