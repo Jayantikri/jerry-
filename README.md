@@ -30,25 +30,22 @@ ls (to check folder is there or data)
 
 # commands to push code to git without cloning the repository
 ```
+ansible_wordpress/ # first chnage the directory
 git init
+git remote add origin https://github.com/PoonamKri7665/ansible.git # add repository name 
+git checkout -b ansible_wordpress
+git add .
+git status
+git commit -m "ansible_wordpress"
+git commit -m "ansible/wordpress"
+git config --global user.email "......@gmail.com"
+git config --global user.name "PoonamKri"
+git commit -m "ansible/wordpress"
+git push origin ansible_wordpress # ansible _wordpress is branch name here
+```  
+# command to check push file size in human readable format   
 ```
- git add .
-```
-  git status
-```
-git commit -m "terraform loadbalanc
-  ```
-git checkout -b terralb
-```
-  git branch
-  
-  # command to check push file size in human readable format 
-  
-  git ls-tree -r --name-only HEAD | xargs -I {} git cat-file -s HEAD:{} | awk '{total += $1} END {mb = total / 1024 / 1024; printf "%.2f MB\n", mb}'
-   ```
-git remote add origin https://github.com/Jayantikri/terraform.git
-  ```
-git push origin terralb
+git ls-tree -r --name-only HEAD | xargs -I {} git cat-file -s HEAD:{} | awk '{total += $1} END {mb = total / 1024 / 1024; printf "%.2f MB\n", mb}'
 ```
 git log (to check logs)
 ```
